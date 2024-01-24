@@ -87,6 +87,45 @@ for i in range(len(test_images)):
     #     cv2.waitKey(1)
     #     cv2.imwrite(f"../test_predictions/{image_name}.jpg", orig_image,)
 
+    # if len(outputs[0]['boxes']) != 0:
+    #     boxes = outputs[0]['boxes'].data.numpy()
+    #     scores = outputs[0]['scores'].data.numpy()
+    #     # filter out boxes according to `detection_threshold`
+    #     boxes = boxes[scores >= detection_threshold].astype(np.int32)
+
+    #     # Encontrar el índice de la caja con el score más alto
+    #     max_score_index = np.argmax(scores)
+
+    #     # Seleccionar solo la caja con el score más alto
+    #     draw_box = boxes[max_score_index]
+    #     pred_classes = [CLASSES[i] for i in outputs[0]['labels'].cpu().numpy()]
+    #     print(scores)
+    #     print(pred_classes)
+    #     # Obtener la clase predicha y el score para la caja seleccionada
+    #     pred_class = CLASSES[outputs[0]['labels'].cpu().numpy()[max_score_index]]
+    #     pred_score = scores[max_score_index]
+
+    #     # Dibujar la caja y escribir el texto
+    #     line_thickness = 1 
+    #     cv2.rectangle(orig_image,
+    #                 (int(draw_box[0]), int(draw_box[1])),
+    #                 (int(draw_box[2]), int(draw_box[3])),
+    #                 (0, 0, 255), line_thickness)
+
+    #     font_scale = 0.5 
+    #     font_thickness = 1  
+
+    #     text_position = (int(draw_box[0]), int(draw_box[1]) - 10)
+
+    #     cv2.putText(orig_image, f"{pred_class} {pred_score:.2f}", 
+    #                 text_position,
+    #                 cv2.FONT_HERSHEY_SIMPLEX, font_scale, (0, 255, 0), 
+    #                 font_thickness, lineType=cv2.LINE_AA)
+
+    #     cv2.imshow('Prediction', orig_image)
+    #     cv2.waitKey(1)
+    #     cv2.imwrite(f"../test_predictions/{image_name}.jpg", orig_image)
+
     if len(outputs[0]['boxes']) != 0:
         boxes = outputs[0]['boxes'].data.numpy()
         scores = outputs[0]['scores'].data.numpy()
@@ -105,26 +144,36 @@ for i in range(len(test_images)):
         pred_class = CLASSES[outputs[0]['labels'].cpu().numpy()[max_score_index]]
         pred_score = scores[max_score_index]
 
-        # Dibujar la caja y escribir el texto
-        line_thickness = 1 
+        # Dibujar la caja
+        line_thickness = 1
         cv2.rectangle(orig_image,
                     (int(draw_box[0]), int(draw_box[1])),
                     (int(draw_box[2]), int(draw_box[3])),
                     (0, 0, 255), line_thickness)
 
-        font_scale = 0.5 
-        font_thickness = 1  
+        # Ajustar el tamaño de la fuente según la altura de la caja
+        box_height = int(draw_box[3]) - int(draw_box[1])
+        font_scale = min(1.0, 0.5 * box_height / 10.0)  # Ajusta el factor 0.5 según sea necesario
 
-        text_position = (int(draw_box[0]), int(draw_box[1]) - 10)
+        # Dividir el texto en varias líneas si es necesario
+        text_lines = [f"{pred_class} {pred_score:.2f}"]
 
-        cv2.putText(orig_image, f"{pred_class} {pred_score:.2f}", 
-                    text_position,
-                    cv2.FONT_HERSHEY_SIMPLEX, font_scale, (0, 255, 0), 
-                    font_thickness, lineType=cv2.LINE_AA)
+        # Calcular la posición del texto
+        text_position = (int(draw_box[0]), int(draw_box[1]) - 5)
+
+        # Dibujar cada línea de texto por separado
+        for i, line in enumerate(text_lines):
+            # Ajustar el tamaño de la fuente nuevamente para garantizar que quepa en la caja
+            _, baseline = cv2.getTextSize(line, cv2.FONT_HERSHEY_SIMPLEX, font_scale, line_thickness)
+            y = max(text_position[1] - i * (baseline + 5), 0)  # Espacio de 5 píxeles entre líneas
+            cv2.putText(orig_image, line, (text_position[0], int(y)),
+                        cv2.FONT_HERSHEY_SIMPLEX, font_scale, (0, 255, 0),
+                        line_thickness, lineType=cv2.LINE_AA)
 
         cv2.imshow('Prediction', orig_image)
         cv2.waitKey(1)
         cv2.imwrite(f"../test_predictions/{image_name}.jpg", orig_image)
+
 
     print(f"Image {i+1} done...")
     print('-'*50)

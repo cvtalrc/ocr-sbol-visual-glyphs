@@ -1,0 +1,26 @@
+<annotation>
+	<folder>output_transformation</folder>
+	<filename>cds.jpg5.jpg</filename>
+	<path>/home/fernanda/Documentos/OCR/OCR/output_transformation/cds.jpg5.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>cds</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>10</xmin>
+			<ymin>79</ymin>
+			<xmax>251</xmax>
+			<ymax>162</ymax>
+		</bndbox>
+	</object>
+</annotation>

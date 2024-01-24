@@ -1,0 +1,26 @@
+<annotation>
+	<folder>output_transformation</folder>
+	<filename>polyA.jpg1.jpg</filename>
+	<path>/home/fernanda/Documentos/OCR/OCR/output_transformation/polyA.jpg1.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>polyA</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>13</xmin>
+			<ymin>70</ymin>
+			<xmax>244</xmax>
+			<ymax>162</ymax>
+		</bndbox>
+	</object>
+</annotation>

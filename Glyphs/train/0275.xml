@@ -1,0 +1,26 @@
+<annotation>
+	<folder>output_transformation</folder>
+	<filename>signature.jpg4.jpg</filename>
+	<path>/home/fernanda/Documentos/OCR/OCR/output_transformation/signature.jpg4.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>signature</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>32</xmin>
+			<ymin>45</ymin>
+			<xmax>228</xmax>
+			<ymax>188</ymax>
+		</bndbox>
+	</object>
+</annotation>

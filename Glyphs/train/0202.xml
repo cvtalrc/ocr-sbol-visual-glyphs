@@ -1,0 +1,26 @@
+<annotation>
+	<folder>output_transformation</folder>
+	<filename>omitted-detail.jpg1.jpg</filename>
+	<path>/home/fernanda/Documentos/OCR/OCR/output_transformation/omitted-detail.jpg1.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>omitted-detail</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>63</xmin>
+			<ymin>122</ymin>
+			<xmax>180</xmax>
+			<ymax>147</ymax>
+		</bndbox>
+	</object>
+</annotation>

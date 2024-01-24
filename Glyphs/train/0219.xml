@@ -1,0 +1,26 @@
+<annotation>
+	<folder>output_transformation</folder>
+	<filename>origin-of-transfer.jpg3.jpg</filename>
+	<path>/home/fernanda/Documentos/OCR/OCR/output_transformation/origin-of-transfer.jpg3.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>origin-of-transfer</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>79</xmin>
+			<ymin>43</ymin>
+			<xmax>218</xmax>
+			<ymax>183</ymax>
+		</bndbox>
+	</object>
+</annotation>

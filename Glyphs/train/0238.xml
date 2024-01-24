@@ -1,0 +1,26 @@
+<annotation>
+	<folder>output_transformation</folder>
+	<filename>promoter.jpg2.jpg</filename>
+	<path>/home/fernanda/Documentos/OCR/OCR/output_transformation/promoter.jpg2.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>promoter</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>70</xmin>
+			<ymin>31</ymin>
+			<xmax>198</xmax>
+			<ymax>200</ymax>
+		</bndbox>
+	</object>
+</annotation>

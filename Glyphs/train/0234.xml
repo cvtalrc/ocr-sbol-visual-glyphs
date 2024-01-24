@@ -1,0 +1,26 @@
+<annotation>
+	<folder>output_transformation</folder>
+	<filename>primer-binding-site.jpg3.jpg</filename>
+	<path>/home/fernanda/Documentos/OCR/OCR/output_transformation/primer-binding-site.jpg3.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>primer-binding-site</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>45</xmin>
+			<ymin>94</ymin>
+			<xmax>240</xmax>
+			<ymax>154</ymax>
+		</bndbox>
+	</object>
+</annotation>

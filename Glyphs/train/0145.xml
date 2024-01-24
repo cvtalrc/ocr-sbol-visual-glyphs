@@ -1,0 +1,26 @@
+<annotation>
+	<folder>output_transformation</folder>
+	<filename>halfround-rectangle.jpg4.jpg</filename>
+	<path>/home/fernanda/Documentos/OCR/OCR/output_transformation/halfround-rectangle.jpg4.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>halfround-rectangle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>28</xmin>
+			<ymin>52</ymin>
+			<xmax>242</xmax>
+			<ymax>194</ymax>
+		</bndbox>
+	</object>
+</annotation>

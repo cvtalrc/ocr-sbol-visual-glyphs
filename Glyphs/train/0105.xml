@@ -1,0 +1,26 @@
+<annotation>
+	<folder>output_transformation</folder>
+	<filename>cds-arrow.jpg4.jpg</filename>
+	<path>/home/fernanda/Documentos/OCR/OCR/output_transformation/cds-arrow.jpg4.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>cds-arrow</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>81</ymin>
+			<xmax>235</xmax>
+			<ymax>196</ymax>
+		</bndbox>
+	</object>
+</annotation>

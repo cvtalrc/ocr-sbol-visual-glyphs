@@ -1,0 +1,26 @@
+<annotation>
+	<folder>output_transformation</folder>
+	<filename>no-glyph-assigned.jpg5.jpg</filename>
+	<path>/home/fernanda/Documentos/OCR/OCR/output_transformation/no-glyph-assigned.jpg5.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>no-glyph-assigned</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>3</xmin>
+			<ymin>1</ymin>
+			<xmax>256</xmax>
+			<ymax>228</ymax>
+		</bndbox>
+	</object>
+</annotation>

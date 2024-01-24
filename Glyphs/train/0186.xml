@@ -1,0 +1,26 @@
+<annotation>
+	<folder>output_transformation</folder>
+	<filename>location-rna-no-top.jpg5.jpg</filename>
+	<path>/home/fernanda/Documentos/OCR/OCR/output_transformation/location-rna-no-top.jpg5.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>location-rna-no-top</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>89</xmin>
+			<ymin>7</ymin>
+			<xmax>156</xmax>
+			<ymax>245</ymax>
+		</bndbox>
+	</object>
+</annotation>

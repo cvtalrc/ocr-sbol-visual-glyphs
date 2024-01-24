@@ -1,0 +1,26 @@
+<annotation>
+	<folder>output_transformation</folder>
+	<filename>composite.jpg2.jpg</filename>
+	<path>/home/fernanda/Documentos/OCR/OCR/output_transformation/composite.jpg2.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>composite</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>4</xmin>
+			<ymin>59</ymin>
+			<xmax>244</xmax>
+			<ymax>141</ymax>
+		</bndbox>
+	</object>
+</annotation>
